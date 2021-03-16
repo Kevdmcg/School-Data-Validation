@@ -110,7 +110,7 @@ void Roster::remove(string ID)
 		lastIndex--;
 		cout << ID << " has been removed.\n";
 		}
-		
+
 	}
 	if (found == !true) {
 		cout <<  "Such a student with this ID was not found.\n";
@@ -187,10 +187,9 @@ int main()
 	"A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
 	"A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
 	"A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
-	"A5,Kevin,McGhee,kmcgh15@wgu.edu,38,10,12,22,SOFTWARE"
+	"A5,Kevin,McGhee,dummy@dummy.com,38,10,12,22,SOFTWARE"
 	};
 
-	cout << "\nC867 Scripting and Programming - Applications - C++ - Student ID#000966140 - Kevin McGhee\n";
 
 	Roster* classRoster = new Roster(numStudents);
 	cout << "\nParsing and adding students:\t";
@@ -214,27 +213,11 @@ int main()
 	classRoster->remove("A3");
 	classRoster->remove("A3");
 
-	/*cout << "\nRemoving A3:";
-	if () {
-		cout << "Done\n";
-		numStudents--;
-	}
-	else cout << "Student not Found.\n";
-
-	cout << "Removing A3:";
-	if (classRoster->remove("A3")) {
-		classRoster->print_All();
-		numStudents--;
-	}
-	else cout << "Such a student with this ID was not found.\n";
-	*/
 	
 
-	
 
-	
+
 
 	classRoster->~Roster();
 	return 0;
 }
-
